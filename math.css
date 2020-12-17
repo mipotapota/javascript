@@ -2,5 +2,22 @@ input {
     font-size: 20pt;
     border: 1px solid gray;
     background-color: lightblue;
-    text-align: right;  
+    text-align: right;
+}
+.btnNumber {
+    width: 40px;
+    height: 40px;
+    color: gray;
+}
+#x {
+    background-color: skyblue;
+    width: 40px;
+    height: 40px;
+    color: gray;
+}
+#c {
+    background-color: lightcoral;
+    width: 40px;
+    height: 40px;
+    color: gray;
 }

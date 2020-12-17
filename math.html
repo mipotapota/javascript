@@ -19,11 +19,13 @@
     <h2>적립할 금액을 먼저 확인[Check]해주세요.</h2>
     <hr>
     Amount: 
-    <input id="amount" type="text" size = "18" value="적립할 금액 확인 =>">
+    <input id="amount" type="text" size = "18" value="적립할 금액 확인 =>" readonly>
     <button id="setAmount">Check</button>
     <p></p>
     Phone Number: 
-    <input type="text" id="phoneNumber" size="18">
+    <input type="text" id="phoneNumber" size="18" readonly><!-- readonly를 쓰면 키보드 입력을 안받게 됨-->
+    <button id="save">Save</button>
+    <button id="cancel" onclick="localStorage.removeItem($('#phoneNumber').val())">Cancel</button>
     <hr>
     <button class="btnNumber" value="010-">010</button>
     <button class="btnNumber" value="0">0</button>
@@ -36,8 +38,7 @@
     <button class="btnNumber" value="7">7</button>
     <button class="btnNumber" value="8">8</button>
     <button class="btnNumber" value="9">9</button>
-    <button class="btnNumber" value="X">X</button>
-    <button class="btnNumber" value="C">C</button>
+    <button id="x" onclick="touchBackSpace()">X</button>
+    <button id="c" onclick="$('#phoneNumber').val('')">C</button>
 </body>
-
 </html>
